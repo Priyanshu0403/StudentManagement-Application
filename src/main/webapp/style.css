@@ -1,0 +1,262 @@
+*{
+  font-family: arial;
+  box-sizing: border-box;
+}
+
+header{
+  display: flex;
+  justify-content: flex-start;
+  background-size: cover;
+  background-position: center;
+  /* border-bottom-right-radius:70px; 
+  border-bottom-left-radius: 70px;  */
+  box-shadow: 0px 4px 8px rgb(102, 96, 96) ;
+  position: relative; /* Keep content on top of the blurred background */
+  z-index: 1; 
+}
+
+header ul{
+  list-style:none;
+  margin:35px;
+  padding-left: 650px;
+  display: flex;
+  text-align: center  ;
+  justify-content:right;
+  font-size:20px;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 38px;
+  gap: 60px;
+}
+
+header ul a{
+  color: white;
+}
+
+header li:hover{
+  font-size: larger;
+  position: relative;
+}
+header img{
+  width: 200px;
+  height: 50px;
+  margin: 30px;
+  float: left;
+}
+
+body {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+  }
+
+
+/*  <!--Home Page Section--> */
+
+
+h3{
+    text-align: center ;
+    text-decoration: underline;
+    color: white;
+}
+
+/* .homepage {
+  background-image: url(HomePageBackGroundIMG.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 100px;
+} */
+
+.homepage {
+  position: relative; /* Make it a positioned container for the blur layer */
+  overflow: hidden; /* Prevent the blurred layer from exceeding the container */
+}
+
+.homepage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(HomePageBackGroundIMG.jpg); /* Background image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: blur(3px); /* Apply the blur effect */
+  z-index: 0; /* Place the blurred background behind the content */
+}
+
+.Description,
+.buttonBox {
+  position: relative; /* Keep content on top of the blurred background */
+  z-index: 1; /* Bring the content above the blurred layer */
+}
+.Description p{
+    margin-top: 50px;
+    margin-left:100px;
+    margin-right:100px;
+    text-align: center;
+    color: white;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 30px;
+}
+
+.contactDiv {
+    margin-bottom: 0px;
+    display: flex; /* Flex container for buttons */
+    justify-content: center; /* Centers buttons horizontally */
+    position: absolute; /* Positions the footer relative to the viewport */
+}
+
+
+.buttonBox{
+    margin-left: 400px;
+    background-image: url(HeaderImg.jpg);
+    width: 500px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+  }
+  .buttonClass{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+  }
+  
+  .button1{
+    padding-right: 40px;
+  }
+  
+  .button2{
+    padding-left: 40px;
+  }
+  .buttonClass button {
+    background-color:transparent;
+    color:black;
+    width: 150px;
+	  height: 50px;
+    border: none;
+    border-radius: 100px;
+    font-size: 25px;
+  }
+  
+  .buttonClass button:hover{
+  background-color: transparent;
+  border: ridge black 10px;
+}
+
+hr{
+  
+  background-color: white;
+  color: white;
+  width: 100%; 
+}
+/* <!--About Us Section--> */
+.aboutUsPage{
+  width: 100%;
+  height: 1000px;
+  background-image: url(AboutUsImg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.aboutUsBox{
+  margin-top: 10px;
+  color: black;
+  display: inline;
+  align-items: center;
+  justify-content: center;
+}
+.info h3{
+  color:white;
+  font-size: 20px;
+}
+
+.info{
+  display: flex;
+  gap: 100px;
+}
+
+#aboutUs{
+  text-align: center;
+  padding-bottom: 30px;
+}
+.info .block1{
+  display: block;
+  text-align: center;
+  justify-content: center;
+  background-color: rgb(194, 197, 30);
+  width: fit-content;
+  height: fit-content;
+  border-radius: 20px;
+  font-weight: 500;
+  padding: 10px;
+}
+.info .block2{
+  display: block;
+  text-align: center;
+  justify-content: center;
+  background-color: rgb(220, 84, 84);
+  width: fit-content;
+  height: fit-content;
+  border-radius: 20px;
+  font-weight: 500;
+  padding: 10px;
+}
+.info .block3{
+  display: block;
+  text-align: center;
+  justify-content: center;
+  background-color: rgb(104, 194, 226);
+  width: fit-content;
+  height: fit-content;
+  border-radius: 20px;
+  font-weight: 500;
+  padding: 10px;
+}
+.info .block4{
+  display: block;
+  text-align: center;
+  justify-content: center;
+  background-color:rgb(209, 47, 125);
+  width: fit-content;
+  height: fit-content;
+  border-radius:20px;
+  font-weight: 500;
+  padding: 10px;
+}
+
+
+/* <!--Contact Section--> */
+.contactUsPage{
+  width: 100%;
+  height: 750px;
+  background-image: url(contactUsImg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 100px;
+
+}
+.contactBox{
+  color: white;
+}
+
+.Details li{
+  padding: 10px;
+  color: black;
+  font-size: 20px;
+}
+
+.Details a{
+  text-decoration: none;
+}

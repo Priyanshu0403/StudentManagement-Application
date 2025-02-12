@@ -1,0 +1,71 @@
+body h1 {
+	font-family: sans-serif;
+	color:  #f3971b;
+	font-size: 35px;
+}
+body {
+	background-color: #483d8b;
+	font-family: sans-serif;
+	color: black;
+	
+	height: 600px; /* Full viewport height */
+	margin: 0;
+  }
+
+form{
+	width: 100%;
+}
+
+.loginPage{
+	
+	display: flex;
+	justify-content: space-evenly;
+}
+
+  
+  .login-form {
+	width: 30%;
+	text-align: center;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .loginImg{
+	width: 40%;
+  }
+  button {
+	color: #483d8b;
+	width: 150px;
+	height: 50px;
+	border: none;
+	padding-left: 10px;
+	border-radius: 10px;
+	margin-top: 10px; /* Adding space between buttons */
+  }
+  
+  button:hover {
+	color: red;
+  }
+  
+  p a {
+	color: #ff0080;
+  }
+  
+  .button-container {
+	margin-top: 20px; /* Adjust space between input fields and buttons */
+  }
+  .input-group{
+    margin-bottom: 15px;
+  }
+  
+  input[type="text"], input[type="password"] {
+	background-color: white;
+	width: 100%;
+	height: 30px;
+	padding: 5px;
+	margin-top: 10px; /* Adjust space above the input fields */
+	border-radius: 5px;
+	border: 1px solid #ddd;
+  }
